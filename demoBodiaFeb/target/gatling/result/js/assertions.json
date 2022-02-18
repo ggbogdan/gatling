@@ -1,0 +1,27 @@
+{
+  "simulation": "demoBodiaFeb.FloodIO",
+  "simulationId": "floodio",
+  "start": 1645158018904,
+  "description": "",
+  "scenarios": ["DemoRecorded"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [75.0],
+  "result": false,
+  "message": "Global: max of response time is less than 75.0",
+  "actualValue": [6514.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful events",
+  "condition": "is greater than",
+  "expectedValues": [95.0],
+  "result": true,
+  "message": "Global: percentage of successful events is greater than 95.0",
+  "actualValue": [100.0]
+}
+  ]
+}
